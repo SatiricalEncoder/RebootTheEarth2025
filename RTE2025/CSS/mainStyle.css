@@ -1,0 +1,112 @@
+/* 
+    This is the main styling for all the pages.
+    This is not used for formatting the information of the web page.
+*/
+
+/* 
+    #31572c - Dark Green
+    #4f772d - Green
+    #90a955 - Light Green
+    #cdc2b7 - Tan
+*/  
+html {
+    background-color: white;
+}
+
+body {
+    min-width: 1200px;
+    max-width: fit-content;
+    width: auto;
+    height: fit-content;
+    margin: auto;
+    background-color: #31572c;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+
+/* Container code for the Header */
+.fContainer {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    width: 98.9%;
+    margin: auto;
+    text-align: center;
+    padding-top: 5px;
+    background-color: #81b922;
+    border: 7px solid #772432;
+}
+
+.logoBar {
+    grid-column: 1;
+}
+
+.fContainer #imgLogo a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.25em;
+}
+
+.fContainer #imgLogo img {
+    height: 90%;
+    width: 90%;
+}
+
+/* Navigation Section */
+.navBar {
+    grid-column: 2;
+    margin: auto;
+    width: 80%;
+    font-weight: bolder;
+}
+
+.navBar .navList ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+.navBar .navList ul li {
+    padding: 0.5%;
+}
+
+.navBar .navList ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.55em;
+}
+
+/* Footer Section */
+.pageFooter {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "navFoot location";
+    background-color: #81b922;
+    text-align: center;
+    border: 8px solid #772432;
+}
+
+.pageFooter #navFoot {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: left;
+    color: black;
+    font-weight: bolder;
+}
+
+.pageFooter #navFoot ul {
+    list-style-type: none;
+}
+
+.pageFooter #navFoot ul li {
+    padding: 8px;
+    font-size: 1.1em;
+}
+
+.pageFooter #navFoot ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.pageFooter #location {
+    margin: auto;
+}
